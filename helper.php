@@ -24,11 +24,11 @@ class ModHelloWorldHelper
     {
         // Obtain a database connection
         $db = JFactory::getDbo();
-        // Retrieve the shout
+        // Retrieve the shout - note we are now retrieving the id not the lang field.
         $query = $db->getQuery(true)
                     ->select($db->quoteName('hello'))
                     ->from($db->quoteName('#__helloworld'))
-                    ->where('lang = ' . $db->Quote('en-GB'));
+                    ->where('id = '. $db->Quote($params));
         // Prepare the query
         $db->setQuery($query);
         // Load the row.

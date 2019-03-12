@@ -17,5 +17,7 @@ defined('_JEXEC') or die;
 // Include the syndicate functions only once
 require_once dirname(__FILE__) . '/helper.php';
 
-$hello = modHelloWorldHelper::getHello($params);
+$language = $params->get('lang', '1');
+$hello    = modHelloWorldHelper::getHello( $language );
+
 require JModuleHelper::getLayoutPath('mod_helloworld');
