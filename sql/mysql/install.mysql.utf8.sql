@@ -9,3 +9,4 @@ CREATE TABLE IF NOT EXISTS `#__helloworld` (
 INSERT INTO `#__helloworld` (`hello`, `lang`) VALUES ('Hello World', 'en-GB');
 INSERT INTO `#__helloworld` (`hello`, `lang`) VALUES ('Hola Mundo', 'es-ES');
 INSERT INTO `#__helloworld` (`hello`, `lang`) VALUES ('Bonjour tout le monde', 'fr-FR');
+INSERT INTO `#__helloworld` (`hello`, `lang`) VALUES ('Hallo Welt', 'de-DE');

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" version="3.1.0" client="site" method="upgrade">
+<extension type="module" version="1.0.1" client="site" method="upgrade">
     <name>Hello, World!</name>
     <author>John Doe</author>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <description>A simple Hello, World! module.</description>
     <files>
       <filename>mod_helloworld.xml</filename>
@@ -36,4 +36,13 @@
         <file driver="mysql" charset="utf8">sql/mysql/uninstall.mysql.utf8.sql</file>
       </sql>
     </uninstall>
+    <update> 
+      <schemas>
+        <schemapath type="mysql">sql/mysql/updates</schemapath> 
+      </schemas> 
+    </update>
+
+    <updateservers>
+      <server type="extension" name="Helloworld" priority="1">http://127.0.0.1/mod_helloworld/helloworld_update.xml</server>
+    </updateservers>
 </extension>
