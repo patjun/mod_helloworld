@@ -13,6 +13,7 @@
       <filename>tmpl/index.html</filename>
       <folder>sql</folder>
     </files>
+    <scriptfile>script.php</scriptfile>
     <config>
       <fields name="params">
         <fieldset name="basic">
